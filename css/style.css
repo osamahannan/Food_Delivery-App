@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+/* css Variables */
+
+:root{
+    --navbar-height:59px;
+}
+
+/* navbar */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#navbar::before {
+    content:"";
+    background-color: black;
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* Logo */
+
+#logo {
+    margin: 10px 34px;
+}
+#logo img {
+    height: 59px;
+    margin: 3px 6px;
+    border-radius: 32px;
+}
+
+/* list styling */
+
+#navbar ul {
+    display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 17px;
+}
+#navbar ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 3px 22px;
+    border-radius: 20px;
+    color: white;
+}
+#navbar ul li a:hover {
+    color:black;
+    background-color: white;
+}
+
+/* home */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 335px;
+    align-items: center;
+    justify-content: center;
+}
+#home::before {
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('../image/img1.jpg') no-repeat center center/cover;
+    height: 400px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+/*Sevices section*/
+
+#services{
+    margin:34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid black;
+    width: 450px;
+    background-color: aqua;
+    text-align: center;
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#services .box img{
+    height: 160px;
+    width: 200px;
+    border-radius: 16px;
+}
+#services .box .scooty{
+    margin-right: 20px;
+}
+#services .box p{
+    font-family: 'Bree Serif', serif;
+}
+
+/* clients section */
+
+#client-section{
+    height: 344px;
+    position: relative;
+}
+#client-section::before{
+    content:"";
+    position: absolute;
+    background: url('../image/food3.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 344px;
+    z-index: -1;
+    opacity: 0.5;
+}
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item img{
+    height: 100px;
+}
+.client-item {
+    padding: 30px;
+}
+#home h1 {
+    color:white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Bree Serif', serif;
+}
+
+/* Utility classes */
+
+.h-primary {
+    font-size: 35px;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+.h-secondary {
+    font-size: 22px;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+.btn {
+    margin: 17px;
+    font-size: 17px;
+    padding: 6px 20px;
+    border-radius: 10px;
+    background-color: brown;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+}
+.center {
+    text-align: center;
+}
