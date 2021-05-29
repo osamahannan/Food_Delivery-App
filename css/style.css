@@ -102,6 +102,8 @@
     margin:34px;
     margin-block: auto;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #services .box{
     border: 2px solid black;
@@ -172,6 +174,7 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 34px;
+    border: 3px solid red;
 }
 #contact-box input,
 #contact-box textarea {
@@ -188,7 +191,8 @@
     font-family: 'Bree Serif', serif;
 }
 #contact-section .btn-1 {
-    margin: 17px 250px;
+    display: flex;
+    margin: auto;
     font-size: 17px;
     padding: 6px 20px;
     border-radius: 10px;
