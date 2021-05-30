@@ -1,6 +1,12 @@
+/* css reset */
+
 *{
     margin: 0;
     padding:0;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* css Variables */
@@ -14,7 +20,9 @@
 #navbar {
     display: flex;
     align-items: center;
-    position: relative;
+    position: sticky;
+    top: 0;
+    bottom: 0;
 }
 #navbar::before {
     content:"";
@@ -106,9 +114,9 @@
     align-items: center;
 }
 #services .box{
-    border: 2px solid black;
+    border: 2px solid brown;
     width: 450px;
-    background-color: #d7e3e3;;
+    background-color: #d7e3e3;
     text-align: center;
     margin: 0 30px 30px 30px;
     border-radius: 20px;
@@ -118,7 +126,6 @@
 #services .box img{
     height: 160px;
     width: 200px;
-    border-radius: 16px;
 }
 #services .box .scooty{
     margin-right: 20px;
@@ -174,7 +181,7 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 34px;
-    border: 3px solid red;
+    
 }
 #contact-box input,
 #contact-box textarea {
@@ -193,6 +200,7 @@
 #contact-section .btn-1 {
     display: flex;
     margin: auto;
+    margin-top: 10px;
     font-size: 17px;
     padding: 6px 20px;
     border-radius: 10px;
